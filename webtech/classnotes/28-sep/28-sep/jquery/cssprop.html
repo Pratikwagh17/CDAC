@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="d1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam expedita provident fuga dolorem, ipsa dolores temporibus facilis obcaecati, laudantium ipsum saepe rerum! Dolorum ex tempore omnis! Provident incidunt est totam.
+    </p>
+    <img  class="cls1" src="../Assetes/vadapav.jpg" alt="vadapav">
+<script>
+    $(document).ready(function (){
+        $("#d1").mouseenter(function(){
+            $(this).css({"color":"Blue","background-color":"aqua","font-size":"20px"});
+        });
+        $("#d1").mouseleave(function(){
+            $(this).css({"color":"red","background-color":"lightgray","font-size":"18px"});
+        })
+
+        $(".cls1").mouseenter(function(){
+            $(this).css({"height":"200px","width":"200px","border-radius":"50%","border":"3px solid black"});
+        });
+        $(".cls1").mouseleave(function(){
+            $(this).css({"height":"200px","width":"200px","border-radius":"5px","border":"3px solid black"});
+        });
+    })
+</script>
+</body>
+</html>

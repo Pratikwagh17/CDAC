@@ -1,0 +1,531 @@
+	PRN- 260843420057
+	Name- Wagh Pratik Santosh
+	Mailid- pratikwagh.sits.comp@gmail.com
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         C++ FUNCTIONS – ASSIGNMENT
+============================================================
+
+
+============================================================
+QUESTION 1 – BASIC FUNCTIONS
+Topic: Functions with Parameters and Return Value
+============================================================
+
+Problem Definition:
+
+Create a class named Calculator that performs four basic
+arithmetic operations:
+
+    1. Addition
+    2. Subtraction
+    3. Multiplication 
+    4. Division
+
+The class should contain four separate functions.
+
+Each function must:
+    • Accept two numbers as parameters.
+    • Perform the respective operation.
+    • Return the calculated result.
+
+In the main() function:
+    • Take two numbers as input.
+    • Call all four functions.
+    • Display the returned results.
+
+Do not perform the final printing inside the class functions.
+
+Sample Input:
+
+Enter two numbers:
+20 5
+
+Sample Output:
+
+Addition = 25
+Subtraction = 15
+Multiplication = 100
+Division = 4
+
+
+Algorithm:
+
+1. Start.
+2. Create a class named Calculator.
+3. Create a function for addition that accepts two numbers
+   and returns their sum.
+4. Create a function for subtraction that accepts two numbers
+   and returns their difference.
+5. Create a function for multiplication that accepts two
+   numbers and returns their product.
+6. Create a function for division that accepts two numbers
+   and returns their quotient.
+7. Start the main() function.
+8. Accept two numbers from the user.
+9. Create an object of Calculator.
+10. Call the four functions using the two numbers.
+11. Store the returned values.
+12. Display all four results from main().
+13. Stop.
+
+
+
+#include<iostream>
+using namespace std;
+ 
+ 
+ float add(float no1,float no2) {
+ 	return no1 + no2; 	 
+ }
+ float sub(float no1, float no2) {
+ 	return no1 -  no2;
+ }
+ float multiply(float no1, float no2) {
+ 	return no1 * no2;
+ }
+ float devide(float no1, float no2){
+	return no1 / no2;
+}
+
+
+int main()
+{
+	double no1,no2;
+	cout<<"enter Two Num: ";
+	cin>>no1>>no2; 	
+	float sum= add(no1,no2);
+	float diff= sub(no1,no2);
+	float product= multiply(no1,no2);
+	float quotient= devide(no1,no2);
+	
+	cout<<"\naddition="<<sum<<endl;
+	cout<<"\nsubstraction="<<diff<<endl;
+	cout<<"\nmultiplication="<<product<<endl;
+	cout<<"\ndevidation="<<quotient<<endl;
+	
+	return 0;
+	
+}
+
+
+============================================================
+QUESTION 2 – FUNCTION OVERLOADING
+Topic: Function Overloading
+============================================================
+
+Problem Definition:
+
+Create a class named Display.
+
+Implement function overloading using a function named
+show().
+
+The function show() must be overloaded for the following
+three different parameter types:
+
+    1. One integer value
+    2. One double value
+    3. One character value
+
+Each overloaded function should display the value received
+by it.
+
+In main(), accept one value of each type and call the
+appropriate overloaded function.
+
+The objective is to demonstrate how C++ selects the correct
+function based on the type of argument passed.
+
+Sample Input:
+
+Enter integer:
+25
+
+Enter decimal value:
+12.75
+
+Enter character:
+A
+
+Sample Output:
+
+Integer value = 25
+Double value = 12.75
+Character value = A
+
+
+Algorithm:
+
+1. Start.
+2. Create a class named Display.
+3. Create a show() function that accepts an integer.
+4. Create another show() function that accepts a double.
+5. Create another show() function that accepts a character.
+6. Ensure all three functions have the same function name
+   but different parameter types.
+7. Start main().
+8. Accept an integer, a double value, and a character.
+9. Create an object of Display.
+10. Call show() with the integer.
+11. Call show() with the double value.
+12. Call show() with the character.
+13. Display the values from the respective overloaded
+    functions.
+14. Stop.
+
+
+
+#include<iostream>
+using namespace std;
+void show(int value){
+	cout<<"integer value: "<<value<<endl;
+}
+void show(double value){
+	cout<<"double value: "<<value<< endl;
+}
+void show(char value){
+	cout<<"character value: "<<value<<endl;
+}
+int main(){
+	
+	int value1;
+	double value2; 
+	char value3;
+	
+	cout<<"enter integer: \n";
+	cin>>value1;
+	
+	cout<<"enter double: \n";
+	cin>>value2;
+	
+	cout<<"enter char: \n";
+	cin>>value3;
+	
+	cout<< endl;
+	
+	show (value1);
+	show (value2);
+	show (value3);
+	
+	return 0;
+
+
+}
+
+
+============================================================
+QUESTION 3 – FUNCTION NESTING
+Topic: One Function Calling Another Function
+============================================================
+
+Problem Definition:
+
+Create a class named Student.
+
+The program should accept the following information about
+a student:
+
+    • Student name
+    • Roll number
+    • Marks in three subjects
+
+Create separate functions to:
+
+    1. Calculate the total marks.
+    2. Calculate the percentage.
+    3. Display the complete student information.
+
+Use function nesting in such a way that one function calls
+another function wherever required.
+
+The total marks and percentage should be calculated using
+separate functions, and the final student information should
+be displayed through the appropriate function.
+
+Sample Input:
+
+Enter student name:
+Rahul
+
+Enter roll number:
+101
+
+Enter marks in three subjects:
+80 75 90
+
+Sample Output:
+
+Student Name = Rahul
+Roll Number = 101
+Total Marks = 245
+Percentage = 81.67
+
+
+Algorithm:
+
+1. Start.
+2. Create a class named Student.
+3. Create data members to store student name, roll number,
+   and marks of three subjects.
+4. Create a function to calculate the total marks.
+5. Create a function to calculate the percentage using the
+   total marks.
+6. Create a display function to display all student details.
+7. Use function nesting by making one function call another
+   required function.
+8. Start main().
+9. Accept the student's name, roll number, and three subject
+   marks.
+10. Create an object of Student.
+11. Store the input values in the object.
+12. Call the appropriate function to calculate and evaluate
+    the student's results.
+13. Display the complete student information.
+14. Stop.
+
+#include<iostream>
+#include<string>
+#include<iomanip>
+using namespace std;
+
+float cal_total(float m1, float m2, float m3){
+	return m1+ m2+m3;
+	
+}
+float cal_percent(float m1, float m2, float m3){
+	float total=cal_total(m1,m2,m3);
+	
+	return total/3.0f;
+}
+void display_info(string name, int rollno,float m1,float m2,float m3){
+	cout<<"\nstudent name: "<<name<<endl;
+	cout<<"roll number: "<<rollno<<endl;
+	cout<<"total marks: "<<cal_total(m1,m2,m3)<<endl;
+	cout<< fixed<< setprecision(2);
+	cout<<"percent: "<<cal_percent(m1,m2,m3)<<endl;
+}
+
+int main(){
+	string name;
+	int rollno;
+	float m1,m2,m3;
+	cout<< "enter student name: ";
+	getline(cin,name);
+	cout<<"enter roll no: ";
+	cin>>rollno;
+	cout<<"enter marks of 3 subject: ";
+	cin>>m1>>m2>>m3;
+	display_info(name,rollno,m1,m2,m3);
+	return 0;
+}
+
+
+
+============================================================
+QUESTION 4 – LAMBDA FUNCTION
+Topic: Lambda Function
+============================================================
+
+Problem Definition:
+
+Write a C++ program using a lambda function to determine
+whether a given number is even or odd.
+
+The lambda function should:
+    • Accept one integer.
+    • Determine whether the number is even or odd.
+    • Return the result.
+
+The main() function should accept the number, call the
+lambda function, and display the result.
+
+Do not use addition as the operation.
+
+Sample Input:
+
+Enter a number:
+27
+
+Sample Output:
+
+27 is Odd.
+
+
+Algorithm:
+
+1. Start.
+2. Accept an integer from the user.
+3. Create a lambda function that accepts one integer.
+4. Check whether the number is completely divisible by 2.
+5. If it is divisible by 2, return "Even".
+6. Otherwise, return "Odd".
+7. Call the lambda function using the input number.
+8. Store the returned result.
+9. Display the number and its result.
+10. Stop.
+
+
+#include <iostream>
+#include<string>
+using namespace std;
+
+int main(){
+
+int num;
+cout<<"enter a number: ";
+cin>>num;
+auto checkevenodd=[](int n)->string{
+if(n%2==0){
+	return "even";
+}else{
+	return "odd";
+}
+};
+string result = checkevenodd(num);
+cout<<"\n"<<num<<" is "<<result<<" number"<<endl;
+return 0;
+}
+
+
+============================================================
+QUESTION 5 – INLINE FUNCTION
+Topic: Inline Function
+============================================================
+
+Problem Definition:
+
+Create a C++ program using an inline function to calculate
+the square of a given number.
+
+The inline function should:
+    • Accept one integer.
+    • Calculate and return its square.
+
+The main() function should accept the number, call the inline
+function, and display the result.
+
+The calculation must be performed through an inline function.
+
+Sample Input:
+
+Enter a number:
+12
+
+Sample Output:
+
+Square of 12 = 144
+
+
+Algorithm:
+
+1. Start.
+2. Create an inline function that accepts one integer.
+3. Calculate the square of the received number.
+4. Return the calculated square.
+5. Start main().
+6. Accept a number from the user.
+7. Call the inline function.
+8. Store the returned result.
+9. Display the number and its square.
+10. Stop.
+
+
+#include<iostream>
+using namespace std;
+inline int sqr(int n){  
+	return n*n;
+}
+int main(){
+	int num;
+	cout<<"enter a number: ";
+	cin>>num;
+	int result = sqr(num);
+	cout<<"\nthe square of given number is: "<<result<<endl;
+	
+	return 0;
+}
+
+
+============================================================
+QUESTION 6 – RECURSION
+Topic: Recursive Function
+============================================================
+
+Problem Definition:
+
+Write a C++ program to find the sum of all natural numbers
+from 1 to N using recursion.
+
+For example, if N = 5:
+
+    1 + 2 + 3 + 4 + 5 = 15
+
+Create a recursive function that accepts N and returns the
+sum from 1 to N.
+
+Do not use loops for calculating the sum.
+
+Sample Input:
+
+Enter N:
+5
+
+Sample Output:
+
+Sum of natural numbers from 1 to 5 = 15
+
+
+Algorithm:
+
+1. Start.
+2. Accept the value of N from the user.
+3. Create a recursive function that accepts N.
+4. Define the base condition when N reaches the first natural
+   number.
+5. Return the appropriate value for the base condition.
+6. For other values, call the same function with the previous
+   natural number.
+7. Add the current value of N to the value returned by the
+   recursive call.
+8. Continue until the base condition is reached.
+9. Return the final sum to main().
+10. Display the calculated sum.
+11. Stop.
+
+
+#include<iostream>
+using namespace std;
+int cal_sum(int n){
+	if (n<=1){return n;
+	
+	}return n+cal_sum(n-1);
+	
+}
+int main(){
+	
+	int num;
+	cout<<"enter num: ";
+	cin>>num;
+	int result= cal_sum(num);
+	cout<<"\nsum of natural number from 1 to entered number: "<<result;
+	return 0;
+}
+
+
+============================================================
+                     END OF ASSIGNMENT

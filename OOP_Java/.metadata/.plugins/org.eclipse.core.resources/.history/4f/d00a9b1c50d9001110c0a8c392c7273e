@@ -1,0 +1,9 @@
+package Assignment;
+
+public class BankAccountMain {
+
+	public static void main(String[] args) {
+		SavingAccount s1 = new Saving Account
+	}
+
+}

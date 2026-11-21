@@ -1,0 +1,23 @@
+
+public class SimpleArrayMain {
+
+	public static void main(String[] args) {
+		float[] temperatures=new float[5];
+		temperatures[0]=88.23f;
+		temperatures[1]=38.59f;
+		temperatures[2]=64.16f;
+		temperatures[3]=73.64f;
+		temperatures[4]=55.97f;
+		
+		
+		int size=temperatures.length;
+		System.out.println("size: " + size);
+		
+		for(int index=0; index<size; index++) {
+			float temp=temperatures[index];
+			System.out.println(temp);
+		}	
+
+	}
+
+}

@@ -1,0 +1,9 @@
+
+public class ParameterPassing {
+
+	public static void main(String[] args) {
+		int index=7;
+		System.out.println();
+	}
+
+}

@@ -1,0 +1,10 @@
+package multithreading;
+
+public class Storage {
+	private int num;
+	private int valueSet;
+	
+	public void 
+	
+
+}

@@ -1,0 +1,8 @@
+public class BookStoreMain {
+
+	public static void main(String[] args) {
+		Book bookFirst=bookStore.getFirstBook();
+		
+	}
+
+}

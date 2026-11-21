@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+.logo{
+        border: 2px solid green;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    box-shadow: 8px 2px 5px black;
+    margin: 5px;
+}
+.mytitle{
+    font-size: 30px;
+    font-weight: 700;
+    color: green;
+    letter-spacing: 1px;
+    text-shadow: 3px 3px 2px black;
+}
+header{
+    background-color: #a7ff7f4a;
+    border-bottom: 3px solid blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstleft{
+    border: 3px solid red;
+    width: 25%;
+    height: 300px;
+    float: left;
+    overflow: clip;
+    text-align: center;
+}
+.firstright{
+    border: 2px solid red;
+    width: 75%;
+    margin-left: 25%;
+    height: 300px;
+    display: flex;
+    overflow: clip;
+    display: flex;
+    overflow: clip;
+    flex-wrap: wrap;
+}
+.marqueeImg{
+        height: 100px;
+    width: 300px;
+    border: 2px solid green;
+}
+.marqueeTag{
+    text-align: center;
+}
+.firstright img{
+        height: 130px;
+    width: 200px;
+    margin: 10px;
+}

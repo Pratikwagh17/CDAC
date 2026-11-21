@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        let city = ["Mumbai", "Nagpur", "Pune", "Satara"];
+        let arrlength = city.length // it return array length
+        console.log(city)
+        console.log(arrlength);
+        let arrSize = city.length - 1;  // it return array size
+        console.log(arrSize);
+        console.log(city[2]);   // how to access array values
+        city[1] = "NAGPUR";
+        console.log(city);     // how to update array data
+
+        for (let i = 0; i < city.length; i++) {
+            document.write(city[i] + ",");
+        }
+        document.write("<br>");
+        //for of : it is use to iterate array values 
+        for (let c of city) {
+            document.write(c + ",");
+        }
+        document.write("<br>");
+        //for in : it is use to access array index 
+        for (let c in city) {
+            document.write(c + ",");
+        }
+        //push: it is use to insert values at last index of an array
+        city.push("Baramati", "Washi");
+        console.log(city);
+        //pop: it is use to remove values fromt last index of an array
+       city.pop();
+       console.log(city);
+       //unshift():it is use to insert values at starting index of an array
+       city.unshift("Thane","Badalapur");
+        console.log(city);
+        //shift():it is use to remove values at starting index of an array
+        city.shift();
+        console.log(city);
+        //splice(startIndex,deleteCount,Values): it is use to add and remove values from middle index of an array.
+       city.splice(3,2);
+       console.log(city);
+       city.splice(2,0,"Jalgaon","Amravati","Pune");
+       console.log(city);
+         city.splice(3,1,"Kolhapur","Solapur");
+       console.log(city);
+       //tostring(): it convert array data into string data
+       console.log(city.toString());
+       //join(seperator):it convert array data into string data,but it take parameter to seperate values
+       console.log(city.join());
+       console.log(city.join("*"));
+       console.log(city.join("-"));
+       console.log(city.join(" "));
+                                            
+
+
+
+
+
+
+
+
+
+                
+
+
+       
+    </script>
+</body>
+
+</html>

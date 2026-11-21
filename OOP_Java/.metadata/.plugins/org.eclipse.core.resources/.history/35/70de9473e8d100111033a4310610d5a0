@@ -1,0 +1,8 @@
+
+public class ArrayAsParameterMain {
+
+	public static double[] getSquareRoots(int[] allNumbers) {
+		int size=
+	}
+
+}

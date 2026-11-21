@@ -1,0 +1,10 @@
+public class BookStore {
+	private static Book[] allBooks = new Book[3];
+	static{
+		Book firstBook = new Book();
+		allBooks[0]= firstBook;
+		
+		allBooks[1] = new Book("Run and ");
+	}
+
+}

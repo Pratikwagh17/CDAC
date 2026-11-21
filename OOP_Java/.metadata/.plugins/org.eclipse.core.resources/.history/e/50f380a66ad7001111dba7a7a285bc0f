@@ -1,0 +1,25 @@
+package collection_framework;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class TypeSafeCollectionMain {
+
+	public static void main(String[] args) {
+		Set<String> countries=new HashSet<>();
+		countries.add("India");
+		countries.add("UK");
+		countries.add("Japan");
+		countries.add("Germany");
+		countries.add("Italy");
+		//countries.add(false);
+		for(String ctr:countries) {
+//			String str=(String)obj;
+			System.out.println(ctr.toUpperCase());
+//			System.out.println(str.toLowerCase());
+		}
+	}
+
+}

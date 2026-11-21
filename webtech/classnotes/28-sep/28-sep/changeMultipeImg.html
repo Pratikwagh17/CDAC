@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .box {
+            border: 5px solid blue;
+            width: 300px;
+            text-align: center;
+            padding: 7px;
+            margin: auto;
+        }
+        </style>
+</head>
+<body>
+     <div class="box">
+
+        <img id="d1" src="../Assetes/poha.jpg" alt="dosa" height="300px" width="300px"><br>
+        <h2 id="d2">Dosa</h2>
+        <button type="button" onclick="changeImg('../Assetes/samosa.jpg','Samosa')">Samosa</button>
+        <button type="button" onclick="changeImg('../Assetes/dosa.jpg','Dosa')">Dosa</button>
+        <button type="button" onclick="changeImg('../Assetes/poha.jpg','Posa')">Poha</button>
+    </div>
+    <script>
+        function changeImg(imgpath,imgName){
+            document.getElementById("d1").src=imgpath ;
+            document.getElementById("d2").innerHTML = imgName; 
+        }
+    </script>
+</body>
+</html>

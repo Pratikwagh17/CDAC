@@ -1,0 +1,9 @@
+package Assignment;
+
+public class BankAccount {
+	private int accountNumber;
+	private String accountHolderName;
+	int balance;
+		
+
+}

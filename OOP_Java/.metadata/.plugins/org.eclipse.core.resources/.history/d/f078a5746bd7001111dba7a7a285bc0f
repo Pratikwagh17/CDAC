@@ -1,0 +1,14 @@
+package collection_framework;
+
+public class Country {
+
+	public Country() {
+		private String name;
+		private String capital;
+		public Country() {
+			name="india";
+			capital=""
+		}
+	}
+
+}

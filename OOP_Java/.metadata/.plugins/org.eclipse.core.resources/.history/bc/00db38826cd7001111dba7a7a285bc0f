@@ -1,0 +1,18 @@
+package collection_framework;
+
+import java.util.HashSet;
+import java.util.Set;
+
+public class HashingExampleMain {
+
+	public static void main(String[] args) {
+		Set<Country> countries =new Hashset<>();
+		country ind = new Country();
+		Country jpn = new Country("Japan","To");
+		Country us = new Country();
+		
+		
+
+	}
+
+}

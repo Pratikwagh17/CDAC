@@ -1,0 +1,50 @@
+24/9/26
+
+Javascript:
+-it is use to add functionality into webapp.
+-it is loosely typed language.
+-it is interpreted language.
+
+*how to use Javascript
+1.internal js:in html page we use script tag and write js code in it.
+2.external js:in this we create a seperate js file and import it in html file by using script tag.
+
+*How to display Output in Javascript
+1.document.write():it display Output on webpage.it will display output in same line
+2.window.alert():it will display output in model popup window.
+3.console.log():it will display output in browser console or in the terminal.
+4.innerHTML or DOM(Document Object Model): display output inside an element or tag.
+
+Q.why js is called as loosely data type language
+-when we declare a variable in Javascript at the same we can determin its datatype.untill and unless we initialize it. 
+-in js we can store different data in same variable.
+
+*Variabels in java 
+-it is use to store data in it.
+-store data canbe change any time.
+-in js to declare a Variabels we can use var,let,const keyword.
+
+*var:
+-it create function scope variable.
+-we can use variable befare declaration of it.
+-we can perform re-declaration of variable 
+
+*let:
+-it create block scope variable.
+-we can not use variable befare declaration of it.
+-we can not perform re-declaration of variable.
+
+*const
+-it create constant variable,whoes value can not change during runtime
+-at the time variable declaration we have to initialize variable.
+
+
+*Hoisting: it is default Javascript behaviour which moves variable declaration at top of page.
+
+
+
+
+
+
+
+

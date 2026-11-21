@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+.block{
+    float: left;
+    height: 150px;
+    border: 2px solid black;
+    width: 20%;
+    border-radius: 6px;
+    text-align: center;
+    background-color: lightgreen;
+}
+.circle{
+    border: 5px solid red;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    background-color: blueviolet;
+    transition: 3s transform;
+}
+.circle:hover{
+    background-color: aqua;
+    transform: rotateY(350deg);
+}
+@media screen and (max-width:992px){
+    .block{
+        width: 25%;
+    }
+}
+@media screen and (max-width:768px){
+    .block{
+        width: 33.33%;
+    }
+}
+@media screen and (max-width:576px){
+    .block{
+        width: 50%;
+    }
+}
+@media screen and (max-width:350px){
+    .block{
+        width: 100%;
+    }
+}

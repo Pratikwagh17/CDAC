@@ -1,0 +1,17 @@
+
+public class SimpleArrayMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float[] temperatures=new float[5];
+		temperatures[0]=88.2f;
+		temperatures[1]=88.2f;
+		temperatures[2]=88.2f;
+		temperatures[3]=88.2f;
+		temperatures[4]=88.2f;
+
+		System.out.println(temperatures[]);
+
+	}
+
+}

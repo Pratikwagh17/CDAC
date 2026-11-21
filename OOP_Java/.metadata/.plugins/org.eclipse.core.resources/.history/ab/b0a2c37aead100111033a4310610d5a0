@@ -1,0 +1,4 @@
+public class BookStore {
+	private static Book[] allBooks = new Book
+
+}

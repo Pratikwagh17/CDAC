@@ -1,0 +1,20 @@
+
+public class BookMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Book bk=new Book();
+		
+		/*bk.setTitle("Wise And Otherwise");
+		bk.setAuther("Mrs. Sudha Murthy");
+		bk.setPageCount(875);
+		bk.setPrice(755.75f);
+		
+		System.out.println(bk.getTitle());
+		System.out.println(bk.getAuther());
+		System.out.println(bk.getPageCount());
+		System.out.println(bk.getPrice());
+
+	}
+
+}

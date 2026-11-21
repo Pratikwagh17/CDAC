@@ -1,0 +1,32 @@
+package collection_framework;
+
+import java.util.LinkedList;
+
+public class LinkedListExampleMain {
+
+	public static void main(String[] args) {
+		LinkedList ic= new LinkedList();
+		ic.add("vanilla");
+		ic.add("mango");
+		ic.add("Pasta");
+		ic.add("Butterscotch");	
+		
+		for(Object obj:ic)
+			System.out.println(obj);
+		
+		System.out.println("=========adding new elemnt at the top==========");
+		
+		ic.addFirst("Gulkant");
+		for(Object obj:ic)
+			System.out.println(obj);
+		
+		System.out.println("=========shown below input==========");
+
+		
+		System.out.println("First element is: " + ic.getFirst());
+		System.out.println("Last element is : "+ ic.getLast());
+			
+		
+		
+	}
+}

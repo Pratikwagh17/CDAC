@@ -1,0 +1,11 @@
+
+public class SimpleArrayMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		float[] temperatures=new temperatures();
+		t
+
+	}
+
+}

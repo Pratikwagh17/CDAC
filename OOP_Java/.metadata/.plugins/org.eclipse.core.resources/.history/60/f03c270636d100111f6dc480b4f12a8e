@@ -1,0 +1,7 @@
+
+public class EnggStudent {
+	int studentId;
+	String name;
+	String branch;
+
+}

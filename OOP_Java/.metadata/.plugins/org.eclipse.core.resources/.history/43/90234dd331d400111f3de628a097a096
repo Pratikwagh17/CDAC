@@ -1,0 +1,12 @@
+package multithreading;
+
+public class SimpleThreadMain extends Thread{
+
+	public static void main(String[] args) {
+		Thread th = new SimpleThread();
+
+		// TODO Auto-generated method stub
+
+	}
+
+}

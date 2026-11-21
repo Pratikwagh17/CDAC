@@ -1,0 +1,9 @@
+package collection_framework;
+
+public class Country {
+
+	public Country() {
+		
+	}
+
+}

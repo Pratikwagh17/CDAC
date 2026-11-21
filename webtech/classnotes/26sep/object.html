@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //   object data type 
+        let student = {
+            id: 1, name: "Sanket", contact: 565664, single: true,
+            address: {
+                city: "Pune", state: "Maharashtra", pin: 455656
+            },
+            detail: function () {
+                return `Id:${this.id} Name:${this.name} Contact:${this.contact} Single:${this.single}`
+            }
+        }
+
+        document.write("Id:" + student.id + " Name:" + student.name + " contact:" + student.contact + " Single:" + student.single + "<br>");
+        // template leteral 
+        document.write(`Id:${student.id} Name:${student.name} Contact:${student.contact} Single:${student.single} <br>`);
+
+        document.write(`City:${student.address.city} State:${student.address.state} Pin:${student.address.pin}  <br>`);
+
+        document.write(student.detail(), "<br>");
+        // array of object 
+
+        let emp = [
+            { id: 1, name: "Ramesh", post: "Developer", salary: 85000 },
+            { id: 2, name: "Radha", post: "HR", salary: 85000 },
+            { id: 3, name: "Gopal", post: "CEO", salary: 85000 },
+            { id: 4, name: "Rani", post: "Manager", salary: 85000 },
+        ]
+        document.write(`Id:${emp[0].id} Name:${emp[0].name} Post:${emp[0].post} Salary:${emp[0].salary} <br>`);
+
+        document.write("<br>=======================================<br>");
+
+        for (let e of emp) {
+            document.write(`Id:${e.id} Name:${e.name} Post:${e.post} Salary:${e.salary} <br>`);
+        }
+        document.write("<br>=======================================<br>");
+        // convert object data into json 
+        let jsondata = JSON.stringify(student);
+        document.write(jsondata)
+        document.write("<br>=======================================<br>");
+        // convert json data into js object
+        let jsObjData = JSON.parse(jsondata);
+        document.write(jsObjData)
+    </script>
+</body>
+
+</html>

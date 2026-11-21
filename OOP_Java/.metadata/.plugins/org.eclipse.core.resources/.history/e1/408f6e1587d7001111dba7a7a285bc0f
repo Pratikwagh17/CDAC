@@ -1,0 +1,8 @@
+package collection_framework;
+
+import java.util.Comparator;
+
+public class PopularityAscendingComparator implements Comparator<SocialMedia>{
+	
+
+}

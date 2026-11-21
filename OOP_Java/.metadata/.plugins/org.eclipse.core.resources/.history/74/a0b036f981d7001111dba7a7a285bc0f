@@ -1,0 +1,11 @@
+package collection_framework;
+
+public class SocialMedia {
+	private String name;
+	private
+
+	public SocialMedia() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

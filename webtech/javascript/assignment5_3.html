@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #h0{
+           
+            
+            border: 5px solid darkgoldenrod;
+    border-radius: 100%;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0px 3px 8px gray;
+    background-color: black;
+        }
+    
+       
+        #h1{
+            margin-top: 10px;
+            padding: 20px;
+            border-radius: 50%;
+            /* background-color: rgb(85, 55, 55); */
+            color: white;
+            /* box-shadow: 0px 3px 8px gray; */
+            /* text-color:white; */
+        }
+
+        #clock{
+                color: white;
+        }
+
+        
+    </style>
+</head>
+<center>
+<body id="b1">
+
+    <div id="h0">
+        <h3 id="h1" >TITAN</h3>
+        <div id="d1">
+            <h2 id="clock"></h2>
+        </div>
+    </div>
+    </center>
+
+    <script>
+        function showTime(){
+            let time = new Date();
+
+            document.getElementById("clock").innerHTML=
+            time.getHours()+":"+
+            time.getMinutes()+":"+
+            time.getSeconds();
+        }
+
+        setInterval(showTime, 1000);
+    </script>
+    
+</body>
+</html>

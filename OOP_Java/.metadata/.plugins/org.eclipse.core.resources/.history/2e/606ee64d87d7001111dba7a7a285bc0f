@@ -1,0 +1,14 @@
+package collection_framework;
+
+import java.util.Comparator;
+
+public class PopularityAscendingComparator implements Comparator<SocialMedia>{
+
+	@Override
+	public int compare(SocialMedia o1, SocialMedia o2) {
+		
+		return 0;
+	}
+	
+
+}

@@ -1,0 +1,6 @@
+package multithreading;
+
+public class GreetingThread extends Thread {
+	private str
+
+}

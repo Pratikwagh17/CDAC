@@ -1,0 +1,32 @@
+package collection_framework;
+
+import java.util.Comparator;
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TreeSetExampleMain2 {
+
+	public static void main(String[] args) {
+		Comparator<SocialMedia> comp1=new PopularityAscendingComparator();
+		Comparator<SocialMedia> comp2=new PopularityDescendingComparator();
+		
+		
+		
+		
+	
+		SortedSet<SocialMedia> socialmedia=new TreeSet();
+		SocialMedia insta= new SocialMedia();
+		SocialMedia fb= new SocialMedia("Facebook",7);
+		SocialMedia wa= new SocialMedia("Watsapp",9);
+		SocialMedia tl= new SocialMedia("Telegram", 5);
+		
+		socialmedia.add(insta);
+		socialmedia.add(fb);
+		socialmedia.add(wa);
+		socialmedia.add(tl);
+		
+		for(SocialMedia media:socialmedia)
+			System.out.println(media);
+	}
+
+}

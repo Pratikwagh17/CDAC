@@ -1,0 +1,20 @@
+package Assignment;
+
+public class SavingsAccount extends BankAccount{
+
+	public SavingsAccount(int accountNumber, String accountHolderName, int balance) {
+		super(accountNumber, accountHolderName, balance);
+ 	}
+
+	@Override
+	public void withdraw (double amount) {
+		if(balance>=1000) {
+		
+		
+		
+	}
+	
+
+	
+
+}

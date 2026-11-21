@@ -1,0 +1,11 @@
+
+public class Person {
+
+	public Person() {
+		// TODO Auto-generated constructor stub
+		private String name;
+		private int age;
+		public Person()
+	}
+
+}

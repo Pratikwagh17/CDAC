@@ -1,0 +1,12 @@
+package multithreading;
+
+public class MessageThread extends Thread {
+	private Message messageObject;
+
+	public MessageThread(Message messageObject) {
+		super();
+		this.messageObject = messageObject;
+	}
+	
+	
+}

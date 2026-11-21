@@ -1,0 +1,12 @@
+
+public class CarMain {
+
+	public static void main(String[] args) {
+		Car simpleCar;
+		simpleCar = new Car();
+		simpleCar.getDescription();
+		System.out.println(simpleCar.getDescription());
+		System.out.println(simpleCar.getCurrentEngine());
+	}
+
+}

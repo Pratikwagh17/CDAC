@@ -1,0 +1,11 @@
+package collection_framework;
+
+public class StackOperationsMain {
+
+	public static void main(String[] args) {
+	
+		// TODO Auto-generated method stub
+
+	}
+
+}

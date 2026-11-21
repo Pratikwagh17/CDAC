@@ -1,0 +1,27 @@
+package JDBC;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class DataRetrievalMain {
+
+	public static void main(String[] args) {
+		String driverClassName = "com.mysql.cj.jdbc.Driver";
+		Connection dbConnection = null;
+		try {
+			Class.forName(driverClassName);
+			System.out.println("Driver loaded. ");
+			
+			String URL="jdbc:mysql://localhost:3306/cdac";
+			String userName="root";
+			String password="root";
+			
+			DriverManager.getConnection(URL,userName,password);
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

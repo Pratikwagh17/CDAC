@@ -1,0 +1,10 @@
+public class MusicSystem {
+	private String Make;
+	private String soundEffect;
+	public MusicSystem() {
+		make="Panasonic";
+		soundEffect="Mono Ttone";
+	}
+	
+
+}

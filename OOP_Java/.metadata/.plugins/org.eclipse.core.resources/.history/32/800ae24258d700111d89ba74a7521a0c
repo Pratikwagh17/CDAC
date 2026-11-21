@@ -1,0 +1,19 @@
+package collection_framework;
+
+import java.util.Stack;
+
+public class StackOperationsMain {
+
+	public static void main(String[] args) {
+		Stack dataValues = new Stack();
+		dataValues.push("Mumbai");
+		dataValues.push("Pune");
+		dataValues.push("Nashik");
+
+		
+	
+		// TODO Auto-generated method stub
+
+	}
+
+}

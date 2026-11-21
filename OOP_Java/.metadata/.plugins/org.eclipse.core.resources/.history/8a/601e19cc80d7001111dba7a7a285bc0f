@@ -1,0 +1,14 @@
+package collection_framework;
+
+import java.util.SortedSet;
+import java.util.TreeSet;
+
+public class TreeSetExampleMain {
+
+	public static void main(String[] args) {
+		SortedSet socialMedia = new TreeSet();
+		
+
+	}
+
+}

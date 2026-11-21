@@ -1,0 +1,39 @@
+package Assignment;
+
+public class BankAccount {
+	private int accountNumber;
+	private String accountHolderName;
+	private int balance;
+	
+	public BankAccount(int accountNumber, String accountHolderName, int balance) {
+		super();
+		this.accountNumber = accountNumber;
+		this.accountHolderName = accountHolderName;
+		this.balance = balance;
+	}
+	
+	public void deposit(double amount) {
+		if(amount>0) {
+			balance+=amount;
+			System.out.println("deposit success");
+			
+		}else {
+			System.out.println("invalid amount");
+		}
+	}
+	public void withdraw(double amount) {
+		if(amount>0 && balance>=amount) {
+			balance-=amount;
+			System.out.println("amount deducted");
+		}else {
+			System.out.println("Invalide input");
+		}
+	}
+	
+	public void display() {
+		System.out.println("Account No.");
+	}
+	
+		
+
+}

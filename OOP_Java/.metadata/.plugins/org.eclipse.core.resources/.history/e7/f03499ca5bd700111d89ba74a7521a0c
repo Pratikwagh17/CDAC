@@ -1,0 +1,10 @@
+package collection_framework;
+
+import java.util.LinkedList;
+
+public class LinkedListExampleMain {
+
+	public static void main(String[] args) {
+		LinkedList ic=		
+	}
+}

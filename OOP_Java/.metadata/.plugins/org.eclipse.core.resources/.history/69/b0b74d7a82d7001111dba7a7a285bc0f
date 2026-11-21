@@ -1,0 +1,12 @@
+package collection_framework;
+
+import java.util.SortedSet;
+
+public class TreeSetExampleMain2 {
+
+	public static void main(String[] args) {
+		SortedSet<SocialMedia> socialmedia=new TreeSet()
+
+	}
+
+}

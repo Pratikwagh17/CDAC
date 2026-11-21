@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function greetings(){
+            console.log("welcomr")
+        }
+        greetings();
+
+        function welcome(std1,std2,std3){
+            return "hello" +std1+std2+std3;
+
+        }
+        console.log(welcome("sanket","ram","rahul"))
+
+        let add = function(num1,num2){
+            return num1 + num2;
+        }
+        console.log(add(10,20));
+
+        let sub =(num1,num2) => {
+            return num1-num2;
+        }
+        console.log(sub(30,10))
+
+    let fullname=(faname,lname,mname="",contact="")=>{
+         return faname+mname+lname+contact
+    }
+    console.log(fullname("pratik","wagh"));
+    console.log(fullname("pratik","wagh","S"));
+    console.log(fullname("pratik","wagh","S",84561));
+
+
+    let stdlist =(...std)=>{
+        return std;
+    }
+       
+    console.log(stdlist("pratik","sudarshan","atharva"))
+    </script>
+    
+</body>
+</html>

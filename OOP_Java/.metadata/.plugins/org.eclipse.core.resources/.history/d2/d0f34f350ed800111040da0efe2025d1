@@ -1,0 +1,21 @@
+package JDBC;
+
+public class DataRetrievalMain {
+
+	public static void main(String[] args) {
+		String driverClassName = "com.mysql.cj.jdbc.Driver";
+		try {
+			Class.forName(driverClassName);
+			System.out.println("Driver loaded. ");
+			
+			String URL="jdbc:mysql:";
+			String userName="";
+			String password="";
+			
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

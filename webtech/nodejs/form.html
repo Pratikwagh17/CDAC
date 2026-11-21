@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get">
+        <label for="name">Enter your full name:            </label>    
+        <input type="text" name="frame" id="txt1" minlength="2" maxlength="20" required><br><br>
+
+        <label for="passs">Enter password:    </label>
+        <input type="password" name="pass" id="txt2" minlength="8" maxlength="20"  required><br><br>
+
+        <label for="passs">Email:    </label>
+        <input type="email" name="umail" id="" required><br><br>
+
+        <label for="passs">Contact:    </label>
+        <input type="contact" name="contact" id="" pattern="^[0-9]${10}" maxlength="10" required><br><br>
+
+        <label for="passs">Age:    </label>
+        <input type="age" name="age" id="" min="18" max="60"  required><br><br>
+
+        <label for="passs">Select your DOB:    </label>
+        <input type="date" name="DOB" id="" required><br><br>
+
+        <label for="passs">Select your gender:    </label>
+        <input type="radio" name="gender" id="" required>male
+        <input type="radio" name="gender" id="" required>female
+        <input type="radio" name="gender" id="" required>other<br><br>
+
+
+        <label for="">select your qulification</label><br>
+            <input type="checkbox" name="edu" value="ssc"></option>ssc
+            <input type="checkbox" name="edu" value="hsc"></option>hsc
+            <input type="checkbox" name="edu" value="ug"></option>ug
+            <input type="checkbox" name="edu" value="pg"></option>pg
+
+        </select><br>
+
+        <label for="">select your course</label>
+        <select name="course" multiple id="">
+            <option value="react">react</option>ssc
+            <option value="angular">angular</option>hsc
+            <option value="java">java</option>ug
+            <option value="python">python</option>pg
+
+        </select><br>
+
+        <label for="">fees:</label>
+        <input type="text" name="fees" value="10000" readonly desabled><br>
+
+        
+
+
+
+        <button type="submit">Submit</button>                       <button type="clear">clear</button>
+
+
+
+
+
+    </form>
+    
+
+
+
+    
+</body>
+</html>

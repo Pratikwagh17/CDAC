@@ -1,0 +1,19 @@
+
+public class EnggStudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EnggStudent s1= new EnggStudent();
+		s1.assignValue(101, "wagh", "cs");
+		s1.printValue();
+		
+		System.out.println("---------------");
+		s1.setBranch("comp,mech");
+		s1.printValue();
+		
+		System.out.println("------------");
+		String studentName = s1.getName();
+
+	}
+
+}

@@ -1,0 +1,15 @@
+package Assignment;
+
+public class CurrentAccount extends BankAccount{
+
+	public CurrentAccount(int accountNumber, String accountHolderName, int balance) {
+		super(accountNumber, accountHolderName, balance);
+	}
+
+	@Override
+	public void withdraw(double amount) {
+		if(amount>0 && balance-amount>= -)
+	}
+	
+
+}

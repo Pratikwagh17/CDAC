@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2 id="d1"></h2>
+    <h2>Counter: <span id="d2">0</span></h2>
+
+    <script>
+        function greeting() {
+            // window.alert("Good Morning Students.");
+            document.getElementById("d1").innerHTML = "Good Morning Students.";
+        }
+        //    greeting();
+        setTimeout(greeting, 5000);
+        let count = 0;
+        function counter() {
+            // count= count+1;
+            count += 1;
+            document.getElementById("d2").innerHTML = count;
+            // let limit=10;
+            //    if(count<limit){
+            //      count += 1;
+            //     document.getElementById("d2").innerHTML = count;
+            //    }else{
+            //     clearInterval()
+            //    }
+        }
+        setInterval(counter, 1000);
+    </script>
+
+</body>
+
+</html>

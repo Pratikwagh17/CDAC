@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+    <div id="d3"></div>
+    <div id="d4"></div>
+    <div id="d5"></div>
+    <div id="d6"></div>
+    <div id="d7"></div>
+    <div id="d8"></div>
+    <div id="d9"></div>
+    <div id="d10"></div>
+    <script>
+        // create object of Date class 
+        let dObj = new Date();
+        document.getElementById("d1").innerHTML=dObj;
+        document.getElementById("d2").innerHTML=dObj.getDate();
+        document.getElementById("d3").innerHTML=dObj.getFullYear();
+        document.getElementById("d4").innerHTML=dObj.getHours();
+        document.getElementById("d5").innerHTML=dObj.getDay();
+        let today = dObj.getDay();
+        switch(today){
+            case 0:{
+               document.getElementById("d6").innerHTML="Sunday";  
+               break
+            }
+            case 1:{
+               document.getElementById("d6").innerHTML="Monday";  
+               break
+            }
+            case 2:{
+               document.getElementById("d6").innerHTML="TuesdaY";  
+               break
+            }
+            case 3:{
+               document.getElementById("d6").innerHTML="Wednesday";  
+               break
+            }
+            case 4:{
+               document.getElementById("d6").innerHTML="Thursday";  
+               break
+            }
+            case 5:{
+               document.getElementById("d6").innerHTML="Friday";  
+               break
+            }
+            case 6:{
+               document.getElementById("d6").innerHTML="Saturday";  
+               break
+            }
+            default:{
+                document.getElementById("d6").innerHTML="Invalid Choice";  
+               break
+            }
+        }
+
+         document.getElementById("d7").innerHTML=dObj.getMonth();  
+        //  digital clock 
+        function myclock(){
+            let dObj = new Date();
+            document.getElementById("d8").innerHTML=dObj.toLocaleTimeString();
+        }
+        // myclock();
+        setInterval(myclock,1000);
+        // how to set date and time 
+        let myDate= new Date("2015","02","10","10","30","45");
+        document.getElementById("d9").innerHTML=myDate;
+    </script>
+</body>
+</html>

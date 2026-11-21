@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>Temporary address</h3>
+
+    <textarea name="temp" id="temp" rows="5" cols="30"></textarea><br>
+    <button onclick="coppyaddress()">same as temp</button><br>
+    <h4>Permanant Address</h4>
+    <textarea name="perm" id="perm" rows="5" cols="30"></textarea>
+
+    <script>
+        function coppyaddress(){
+            let temp= document.getElementById("temp").value;
+            document.getElementById("perm").value=temp;
+        }
+    </script>
+
+</body>
+</html>

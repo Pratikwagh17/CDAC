@@ -1,0 +1,21 @@
+
+public class ParameterPassing {
+	private static void changeIndex(int idx) {
+		idx=10;		
+	}
+	
+	private static void changeTitle
+
+	public static void main(String[] args) {
+		
+		int index=7;
+		System.out.println("Index before change: " +index);
+		changeIndex(index);
+		System.out.println("Index after change: "+index);
+		System.out.println("===============================");
+		
+		Book myBook=new Book();
+		System.out.println("Book title before change: "+myBook.getTitle());
+	}
+
+}

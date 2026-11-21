@@ -1,0 +1,16 @@
+package collection_framework;
+
+import java.util.Vector;
+
+public class VectorExampleMain {
+
+	public static void main(String[] args) {
+		Vector dataValues = new Vector();
+		System.out.println("Cuurent size:" + dataValues.size());
+		System.out.println("Total capacity:" + dataValues.capacity());
+		dataValues
+
+
+	}
+
+}

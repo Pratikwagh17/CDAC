@@ -1,0 +1,15 @@
+package collection_framework;
+
+public class Country {
+		private String name;
+		private String capital;
+		public Country() {
+			name="india";
+			capital="New Delhi";
+		}
+		public Country(String name, String capital) {
+			super();
+			this.name = name;
+			this.capital = capital;
+		}
+}

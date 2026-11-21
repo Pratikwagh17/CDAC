@@ -1,0 +1,19 @@
+{
+"products":[
+    {"id":1,"name":"laptop","price":50000,"company":"dell","quantity":10},
+    {"id":1,"name":"mouse","price":50000,"company":"hp","quantity":10},
+    {"id":1,"name":"keyboard","price":50000,"company":"lg","quantity":10},
+    {"id":1,"name":"mobile","price":50000,"company":"redmi","quantity":10},
+    {"id":1,"name":"screen","price":50000,"company":"dell","quantity":10},
+    {"id":1,"name":"mousepad","price":50000,"company":"softonic","quantity":10},
+    {"id":1,"name":"printer","price":50000,"company":"hp","quantity":10}
+],
+"users":[
+    {"id":1,"uid":"admin","upass":"admin123"},
+    {"id":1,"uid":"admin","upass":"admin123"},
+    {"id":1,"uid":"admin","upass":"admin123"},
+    {"id":1,"uid":"admin","upass":"admin123"}
+]
+
+
+}

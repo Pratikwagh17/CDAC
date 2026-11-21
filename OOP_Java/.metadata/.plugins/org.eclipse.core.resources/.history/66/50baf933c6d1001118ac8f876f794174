@@ -1,0 +1,10 @@
+
+public class PaersonMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		person p1=new person();
+
+	}
+
+}

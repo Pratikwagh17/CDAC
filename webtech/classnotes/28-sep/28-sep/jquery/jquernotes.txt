@@ -1,0 +1,41 @@
+28/9/26
+
+JQuery:
+-jquery is javacript library. 
+-which is use to make javascript code easy.
+-which simplify javacript code.
+-it is easy to learn
+
+*how to use JQuery
+-ther are two ways to use it 
+1.By using CDN Link(internet is mamdatory)
+2.By downloadin 
+
+*Syntax:
+$(selector).action()
+
+*selector: it is use to select an element
+-element Name: <div>,<p>...
+-id select(#): 
+-class selector(.):
+-this selector(this):
+
+*Structure of JQuery programe 
+$(document).ready(function (){
+    jquery code 
+});
+
+*What is Document ready event:
+-document ready event prevent any jaquery code fron running before document is finished loading.
+-it is good practice to wait for the document to be fully loaded and ready before working with it.
+
+*jquery Animation:
+-to perform in jquery first we have change element position property and make it ,position:relative.
+Syntax:
+$(selector).action(function(){
+    $(selector).animate(css property)
+});
+
+
+
+

@@ -1,0 +1,12 @@
+package collection_framework;
+
+import java.util.Map;
+
+public class HashMapExampleMain {
+
+	public static void main(String[] args) {
+		Map<int, V>
+
+	}
+
+}

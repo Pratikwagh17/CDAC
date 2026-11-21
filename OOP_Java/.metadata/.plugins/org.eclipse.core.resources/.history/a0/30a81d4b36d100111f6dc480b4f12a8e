@@ -1,0 +1,17 @@
+
+public class EnggStudent {
+	private int studentId;
+	private String name;
+	private String branch;
+	
+	public void assignValue(int id, String nm, String br) {
+		studentId =id;
+		name=nm;
+		branch=br;		
+	}
+	public void printValue() {
+		System.out.println(studentId);
+		System.out.println(name);
+	}
+
+}

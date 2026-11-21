@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signal</title>
+
+    <style>
+        .box {
+            border: 0px solid grey;
+            background-color: grey;
+            height: 500px;
+            width: 200px;
+            border-radius: 100px;
+            margin: 50px auto;
+            padding-top: 25px;
+        }
+
+        #d1 {
+            width: 135px;
+            height: 135px;
+            border: 0px solid red;
+            background-color: red;
+            border-radius: 50%;
+            margin: 15px auto 15px;
+            /* padding-top: auto; */
+        }
+
+        #d2 {
+            width: 135px;
+            height: 135px;
+            border: 0px solid yellow;
+            background-color: yellow;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+        }
+
+        #d3 {
+            width: 135px;
+            height: 135px;
+            border: 0px solid green;
+            background-color: green;
+            border-radius: 50%;
+            margin: 0 auto;
+            color: rgba(128, 128, 128, 0.637);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <div id="d1"></div>
+        <div id="d2"></div>
+        <div id="d3"></div>
+    </div>
+<script>
+
+   
+        
+        let signal = 1
+         function singnal(){
+           if(signal == 1){
+            document.getElementById("d1").style.backgroundColor = "red";
+            document.getElementById("d2").style.backgroundColor = "white";
+            document.getElementById("d3").style.backgroundColor = "white";
+
+            signal++;
+
+           }
+           else if(signal == 2){
+            document.getElementById("d1").style.backgroundColor = "white";
+            document.getElementById("d2").style.backgroundColor = "orange";
+            document.getElementById("d3").style.backgroundColor = "white";
+
+                signal++;
+           
+            }
+            else{
+            document.getElementById("d1").style.backgroundColor = "white";
+            document.getElementById("d2").style.backgroundColor = "white";
+            document.getElementById("d3").style.backgroundColor = "green";
+
+                signal = 1;
+           
+        }  
+        }
+        setInterval(singnal,3000);
+   
+    
+</script>
+
+</body>
+</html>

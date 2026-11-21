@@ -1,0 +1,9 @@
+package multithreading;
+
+public class MessageThreadMain {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

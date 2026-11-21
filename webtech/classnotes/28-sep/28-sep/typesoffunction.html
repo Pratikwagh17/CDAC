@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        // 1. default function 
+        function greeting() {
+            console.log("Welcome You All in Js");
+        }
+        greeting();
+
+        // 2.parameterize function  
+        function welcome(std1, std2, std3) {
+            return "Hello " + std1 + std2 + std3;
+        }
+        console.log(welcome("Sanket ", "Om ", "Rahul "));
+
+        //3.ananymous function : function  which has no name;
+        let add = function (num1, num2) {
+            return num1 + num2;
+        }
+        console.log(add(10, 20));
+        //4.arrow function: function which has no name as well as no function keyword.
+        // let sub = (num1, num2) => {
+        //     return num1 - num2;
+        // }
+        
+        let sub = (num1, num2) => num1 - num2;
+        
+        console.log(sub(50, 30));
+        //5.optional parameterize function: in this no need to pass parameter value,optional parameter always at last.
+        let fullName = (fname,lname,mname="",contact="")=>{
+         return fname+mname+lname+contact
+        }
+        console.log(fullName("Panchashil ","Wankhede"));
+        console.log(fullName("Panchashil ","Wankhede ","M. "));
+        console.log(fullName("Panchashil ","Wankhede ","M. ","12345"));
+       //6.rest parameterize function: when we don't how many parameter required to. in this we use spread operator(...),it store data in array format.
+       let stdList = (...std)=>{
+        return std;
+       }
+       console.log(stdList("Sanket","Suraj","Raj","Aman","Jay"))
+    </script>
+
+</body>
+
+</html>

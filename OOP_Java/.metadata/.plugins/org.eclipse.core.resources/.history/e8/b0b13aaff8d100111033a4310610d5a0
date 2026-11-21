@@ -1,0 +1,9 @@
+
+public class Engine {
+	private String power;
+	private String fuel;	
+	public Engine() {
+		power='1200 '
+	}
+
+}

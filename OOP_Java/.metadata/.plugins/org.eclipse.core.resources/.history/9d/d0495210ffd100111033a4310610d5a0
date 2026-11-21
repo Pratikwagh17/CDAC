@@ -1,0 +1,24 @@
+
+public class CarMain {
+
+	public static void main(String[] args) {
+		Car simpleCar;
+		simpleCar = new Car();
+		simpleCar.getDescription();
+		System.out.println(simpleCar.getDescription());
+		Engine simpleEngine= simpleCar.getCurrentEngine();
+		String simplePower = simpleEngine.getPower();		
+		System.out.println(simplePower);
+		
+		String simpleCar2=simpleCar.getCurrentEngine().getPower();
+		System.out.println(simpleCar2);
+		
+		System.out.println("======================");
+		
+		Car premiumCar;
+		Engine PremiumEngine = new Engine("2600 CC", "Diesel");
+		MusicSystem PremiumMusicSystem= new MusicSystem("Sony","Poly Tone");
+		premiumCar new Car("Toyota Innova",2800232,premiumEngine,PremiumMusicSystem)
+	}
+
+}

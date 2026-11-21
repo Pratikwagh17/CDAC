@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <p id="child1">child1</p>
+        <p id="child2">child2</p>
+    </div>
+
+    <hr>
+    <ul id="fruit">
+        <li id="f1">Apple</li>
+        <li id="f2">Mango</li>
+    </ul>
+    <script>
+       let parentE1 = document.getElementById("parent");
+        console.log(parentE1);  
+        let newpara= document.createElement("p");
+        newpara.setAttribute("id","child3");
+        newpara.innerText="child3";
+        parentE1.appendChild(newpara);
+
+        // let parentE1 = document.getElementById("parent");
+        // console.log(parentE1);
+        // let newpara= document.createElement("p");
+        // newpara.setAttribute("id","child3");
+        // newpara.innerText="child3";
+        // parentE1.appendChild(newpara);
+
+
+
+        let fruitt = document.getElementById("fruit");
+        console.log("fruitt");
+        let newlist=document.createElement("li");
+        newlist.setAttribute("id","f3");
+        newlist.innerText="banana";
+        fruitt.appendChild(newlist);
+
+        // let fruitt = document.getElementById("fruit");
+        // for(let i=0;i<fruit.length)
+
+
+
+        let emp=[
+            {id:1,name:"pratik",post:"developer",salary:"95000"},
+            {id:2,name:"sudu",post:"tl",salary:"95000"},
+            {id:3,name:"atharva",post:"hr",salary:"95000"},
+            {id:4,name:"ravi",post:"tester",salary:"95000"},
+            {id:5,name:"patil",post:"manager",salary:"95000"},
+            {id:6,name:"jay",post:"tl",salary:"95000"}
+        ];
+        
+    </script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+27/9/26
+
+*Typescript:
+-it is superset of javascript.
+-it is strict type language.
+-it is compiled language.
+-it is developed and maintain my microsoft
+
+-to overcome the loopwholes of javascript.
+-we create typescript file by writting filename.ts extension.
+how to run ts file 
+-tsc filename.ts // it compile ts file and generate plain text js file
+-node fileName.js // to run js file 
+*How to declare variable in ts 
+let variableName:datatype;
+
+Task: create simple parameterize function having three parameter fname,mname,lname and display it output in console.
+o/p
+FirstName:Panchashil MiddleName:M. LastName:Wankhede
+
+*Oops:
+1.class:
+-it is collection of data-member and member-function.
+-it is template which we can reuse multiple time.
+-to create class we use class keyword.
+-class name must start with capital letter.
+
+this:-it act as owner of class, by usinf this keyword we can access class data-member inside it.
+
+2.Object: 
+-it is an instance of class.
+-object allows us to access class data-member and member-function outside class.
+syntax:  let stdObj = new Student();
+
+3.construcor:
+-construcor is special memeber function of class.
+-it execute automatically when object of class is created.
+-constructor is also use to initialize class data-member.
+-in javascript construcor name should only constructor.
+
+4.Inheritance:
+-accessing property from parent class to child class.
+-to achieve this we use extends keyword between child class and parent class.
+
+-super(): 
+it represent parent class constructor in child class constructor.
+-super must be first statment in child class constructor.
+
+5.Abstraction:hidding the implementation and showing feature
+6.Encapsulation: wrapping of data into single
+7.pollymorphism: it is ability to take more than one form.
+  -method overloading: when we have multiple method with same name in same class.
+  -method overriding:when we have multiple method with same name in different class.
+
+*Access modifier
+-public:we can access data member inside class,outside class, and derived class also.
+-private:we can acess data member only inside same calss.
+-protected:we can access data in same class and in its child(derived class)
+
+*module Concept
+accessing data from one file to another file.
+for this we use import and export keyword.
+=====================================================
+28/9/26
+
+Task:create one class haing name Employee  with data-member empId,empName,empPost,empSalary and one method with name employeeDetails and access this method outside class in typescript ,you have to create 3 object the same class. 
+Task: crete get and set method for name,post,salary.
+
+*get and set 
+-while using get and set method keep method name same.
+-get method is use to access private data outside class
+-set method is use to update private data inside class
+
+*Interface:
+-it is an singnature of class.
+-it contain abstract and variable omly.
+-to implement interface its child clas has responsibility of it.
+-to create interface we have use interface keyword.
+-to implement interface with child we use implements keyword.
+
+*Promises:
+-promises is is javascript object that link producing code and consuming code.
+-Producing Code:it take some time to execute.
+-consuming code: it wait for producing code responce.
+-its has three state 
+1.Pending: in process 
+2.fulfiled: complited 
+3.Reject: failed
+
+*Async and Await 
+-async and await makes promis easy.
+-async makes function return promis 
+-await makes function wait for a promise 
+-await we always use inside asynch function 
+
+then==>async 
+catch=> responce/reject  
+
+*how to create JSON Database 
+*how to create json server 
+step1:npm install -g json-server 
+step:json-server --watch -p 4040 db.json 
+step3: go to browser url and write localhost:4040
+

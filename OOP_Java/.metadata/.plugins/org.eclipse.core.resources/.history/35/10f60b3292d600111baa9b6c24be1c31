@@ -1,0 +1,19 @@
+package multithreading;
+
+public class Storage {
+	private int num;
+	private boolean valueSet;
+	
+	public void setNum() {
+		if(valueSet) {
+			try {
+				wait();
+				
+			}
+			catch()
+			
+		}
+	}
+	
+
+}

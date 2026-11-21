@@ -1,0 +1,14 @@
+package multithreading;
+
+public class GreetingThread extends Thread {
+	private String message;
+	private int timeGap;
+	public GreetingThread(String message, int timeGap) {
+		super();
+		this.message = message;
+		this.timeGap = timeGap;
+	}
+	
+	
+
+}

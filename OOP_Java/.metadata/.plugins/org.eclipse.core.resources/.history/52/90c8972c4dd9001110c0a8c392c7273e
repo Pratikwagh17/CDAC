@@ -1,0 +1,25 @@
+package Assignment;
+
+public class SavingsAccount extends BankAccount{
+
+	public SavingsAccount(int accountNumber, String accountHolderName, int balance) {
+		super(accountNumber, accountHolderName, balance);
+ 	}
+
+	@Override
+	public void withdraw (double amount) {
+		if(balance-amount>=1000) {
+			balacne-=amount;
+			System.out.println("deduction succesfull");
+		}else {
+			System.out.println("maintain minimum balance and enter amount according to that rule!!!");
+		}
+		
+		
+		
+	}
+	
+
+	
+
+}

@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html>
+<body bgcolor="cyan">
+	<h1>
+	To access HelloWorldServlet, Please <a click here.
+	</h1>
+
+</body>
+</html>

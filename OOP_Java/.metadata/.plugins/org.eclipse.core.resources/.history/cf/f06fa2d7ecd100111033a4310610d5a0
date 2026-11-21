@@ -1,0 +1,10 @@
+public class BookStoreMain {
+
+	public static void main(String[] args) {
+		Book bookFirst=BookStore.getFirstBook();
+		System.out.println(bookFirst.getTitle());
+		
+		
+	}
+
+}

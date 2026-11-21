@@ -1,0 +1,11 @@
+package collection_framework;
+import java.util.ArrayList;
+
+public class ArrayExampleMain {
+
+	public static void main(String[] args) {
+		ArrayList<E>
+
+	}
+
+}

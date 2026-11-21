@@ -1,0 +1,12 @@
+
+public class EnggStudentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		EnggStudent s1= new EnggStudent();
+		s1.studentId=123;
+		System.out.println(s1);
+
+	}
+
+}

@@ -1,0 +1,17 @@
+
+public class ParameterPassing {
+	private static void changeIndex(int idx) {
+		idx=10;		
+	}
+
+	public static void main(String[] args) {
+		
+		int index=7;
+		System.out.println("Index before change: " +index);
+		changeIndex(index);
+		System.out.println("Index after change: "+index);
+		System.out.println();
+		
+	}
+
+}

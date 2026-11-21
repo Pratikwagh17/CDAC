@@ -1,0 +1,9 @@
+package Assignment;
+
+public class CurrentAccount {
+
+	public CurrentAccount() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

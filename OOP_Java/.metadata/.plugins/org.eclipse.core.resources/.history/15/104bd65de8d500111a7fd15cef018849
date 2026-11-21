@@ -1,0 +1,10 @@
+package Assignment;
+
+public class CurrentAccount extends BankAccount
+{
+
+	public CurrentAccount() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

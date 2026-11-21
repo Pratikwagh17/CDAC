@@ -1,0 +1,11 @@
+package multithreading;
+public class GreetingRunnableMain {
+	public static void main(String[] args) {
+		Runna t1 = new GreetingThread("Hiiii Priti!!!",1000);
+		Runna t2 = new GreetingThread("Byeee Manas!!!",500);
+		t1.start();
+		t2.start();
+//		t1.run();
+//		t2.run();
+	}
+}

@@ -1,0 +1,212 @@
+PRN- 260843420057
+Name- Wagh Pratik Santosh
+Mail- pratikwagh.sits.comp@gmail.com
+
+
+
+
+
+
+
+
+Q. 1-
+
+#include <iostream>
+#include<string>
+using namespace std;
+int main(){
+	string s;
+	int u_count,l_count,num_count,w_count;
+	cout<<"write a sentence: ";
+	getline(cin,s);
+	for (int i=0;i<s.length();i++)
+	
+	{
+		if(s[i]>='A' && s[i]<='Z')
+		{
+			u_count++;
+		}
+		else if(s[i]>='a'&&s[i]<='z')
+		{
+			l_count++;	
+		}
+		else if(s[i]>='0'&& s[i]<='9')
+		{
+			num_count++;
+		}
+		else if (s[i]==' ')
+		{
+			w_count++;
+		}
+}
+	
+	
+	cout<<"count of all upper and lower "<<s.size()<<endl;
+	cout<<"count of upper case: "<<u_count<<endl;
+	cout<<"count of numbers: "<<num_count<<endl;
+	cout<<"count of number of words: "<<w_count;
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+Q.2-
+
+#include <iostream>
+using namespace std;
+int main(){
+	int rows=3,cols=3;
+	int m[rows][cols];
+	for (int r=0;r<rows;r++)
+	{	
+		for (int c=0;c<cols;c++)
+	{
+		cout<<"enter the matrix: for m["<<r<<"]["<<c<<"]:";
+		cin>>m[r][c];
+	}
+	}
+	
+	cout<<"\n your written matrix is: \n";
+	for (int r=0;r<rows;r++)
+	{
+		int rsum=0;
+		
+		for (int c=0;c<cols;c++)
+		{			
+			cout<<m[r][c]<<"\t";
+			rsum+=m[r][c];
+		}
+		cout<<"  "<<rsum<<endl;
+		cout<<endl;
+	}
+	int totsum=0;
+	for (int c=0;c<cols;c++)
+	{
+		int csum=0;
+		for (int r=0;r<rows;r++)
+		{
+			csum+=m[r][c];
+		}
+		cout<<csum<<"\t";
+		totsum += csum;
+	}
+		cout<<endl;
+		cout<<endl;
+	cout<<"Grand Total: "<<totsum<<endl;
+	cout<<endl;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q.3-
+
+#include <iostream>
+using namespace std;
+int main(){
+	int rows=3,cols=3;
+	int m[rows][cols];
+	for (int r=0;r<rows;r++)
+	{	
+		for (int c=0;c<cols;c++)
+	{
+		cout<<"enter the matrix: for m["<<r<<"]["<<c<<"]:";
+		cin>>m[r][c];
+	}
+	}
+	
+	cout<<"\n your written matrix is: \n";
+	for (int r=0;r<rows;r++)
+	{
+		int rsum=0;
+		
+		for (int c=0;c<cols;c++)
+		{			
+			cout<<m[r][c]<<"\t";
+			rsum+=m[r][c];
+		}
+		cout<<"  "<<rsum<<endl;
+		cout<<endl;
+	}
+	int totsum=0;
+	for (int c=0;c<cols;c++)
+	{
+		int csum=0;
+		for (int r=0;r<rows;r++)
+		{
+			csum+=m[r][c];
+		}
+		cout<<csum<<"\t";
+		totsum += csum;
+	}
+		cout<<endl;
+		cout<<endl;
+	cout<<"Grand Total: "<<totsum<<endl;
+	cout<<endl;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	return 0;
+}

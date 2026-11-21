@@ -1,0 +1,21 @@
+package multithreading;
+public class GreetingThreadMain {
+	public static void main(String[] args) {
+		Thread t1 = new GreetingThread("Hiiii Priti!!!",1000);
+		Thread t2 = new GreetingThread("Byeee Manas!!!",500);
+		
+		t1.start();
+		t2.start();
+		try {
+			t1.join();
+			t2.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Thank you, Visit again!!!");
+//		t1.run();
+//		t2.run();
+	}
+}
+ 

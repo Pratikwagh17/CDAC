@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="parent">
+        <p id="child1">child 1</p>
+        <p id="child2">child 2</p>
+    </div>
+    <hr>
+    <ul id="parentUL">
+    </ul>
+    <hr>
+    <table border="" width="50%">
+        <thead>
+            <tr>
+                <th>Id</th><th>Name</th><th>Post</th><th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="parenttb">
+        </tbody>
+    </table>
+    <script>
+        let parentEl = document.getElementById("parent");
+        console.log(parentEl);
+        // create new Element 
+        let newPara = document.createElement("p");
+        // set attribute with its value
+        newPara.setAttribute("id","child3")
+        // assign data to an element
+        newPara.innerText = "child 3";
+        // add child element to parent.
+        parentEl.appendChild(newPara);
+      
+        let fruits = ["Apple","Mango","Banana","Graps","Chiku","Watermelon"]
+         
+            let newUl = document.getElementById("parentUL");
+            for(let i=0;i<fruits.length;i++){
+             let newLi = document.createElement("li");
+                 newLi.innerText=fruits[i];
+                 newUl.appendChild(newLi);
+            }
+    let emp =[
+        {id:1,name:"Sanket",post:"Developer",salary:95000},
+        {id:2,name:"Suraj",post:"TL",salary:95000},
+        {id:3,name:"Radha",post:"HR",salary:95000},
+        {id:4,name:"Jaya",post:"Tester",salary:95000},
+        {id:5,name:"Rohan",post:"Manager",salary:95000},
+        {id:6,name:"Sharda",post:"TL",salary:95000}
+    ];
+let parentTbody = document.getElementById("parenttb");
+for(let e of emp){
+    let newRow = document.createElement("tr");
+    newRow.innerHTML=`<td>${e.id}</td><td>${e.name}</td><td>${e.post}</td><td>${e.salary}</td>`;
+    parentTbody.appendChild(newRow);
+}
+           
+    </script>
+</body>
+
+</html>

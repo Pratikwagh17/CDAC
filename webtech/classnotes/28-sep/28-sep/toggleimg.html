@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            border: 5px solid blue;
+            width: 300px;
+            text-align: center;
+            padding: 7px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <img id="d1" src="../Assetes/dosa.jpg" alt="dosa" height="300px" width="300px"><br>
+        <h2 id="d2">Dosa</h2>
+        <button type="button" onclick="toggleImage()">Toogle Image</button>
+    </div>
+
+    <script>
+        let cond=false;
+        function toggleImage(){
+              cond = !cond;
+          if(cond){
+                 document.getElementById("d1").src="../Assetes/samosa.jpg" ;
+                 document.getElementById("d2").innerHTML = "Samosa";
+          }else{
+                 document.getElementById("d1").src="../Assetes/dosa.jpg" ;
+                 document.getElementById("d2").innerHTML = "Dosa";
+          }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

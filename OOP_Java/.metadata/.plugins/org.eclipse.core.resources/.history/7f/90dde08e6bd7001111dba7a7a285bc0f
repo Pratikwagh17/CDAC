@@ -1,0 +1,11 @@
+package collection_framework;
+
+public class Country {
+		private String name;
+		private String capital;
+		public Country() {
+			name="india";
+			capital="New Delhi";
+		}
+	
+}

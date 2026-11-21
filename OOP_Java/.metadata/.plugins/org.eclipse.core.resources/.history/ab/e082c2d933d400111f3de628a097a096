@@ -1,0 +1,8 @@
+package multithreading;
+
+public class GreetingThreadMain {
+
+	public static void main(String[] args) {
+		Thread t1 = new GreetingThread("Hiiii Priti!!!",1000)				
+	}
+}

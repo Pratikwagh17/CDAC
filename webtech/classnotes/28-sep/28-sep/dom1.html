@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1">
+        <p>child element-1</p>
+        <p>child element-2</p>
+    </div>
+    <input type="text" name="elname" id="txt1">
+    <button type="button" onclick="createList()">Create Element</button>
+    <ul id="d2">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+    <button type="button" id="btn1">click on me</button>
+    <h1 onmouseover="window.alert('How are you')">Hover on Me</h1>
+
+    <script>
+        let parentUl = document.getElementById("d2");
+        function createList() {
+            let newLi = document.createElement("li");
+            let data = document.getElementById("txt1").value;
+            newLi.innerText = data;
+            parentUl.appendChild(newLi);
+        }
+
+        // find the parent element 
+        let parentDiv = document.getElementById("d1");
+        //  create new paragraph Element 
+        let newPara = document.createElement("p");
+        // add atttibe with value 
+        newPara.setAttribute("id", "p3");
+        // insert data or information inside element
+        newPara.innerText = "child element -3";
+        console.log(newPara);
+        // insert one element inside another 
+        parentDiv.appendChild(newPara);
+        console.log(parentDiv)
+    </script>
+</body>
+
+</html>

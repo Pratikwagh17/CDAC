@@ -1,0 +1,26 @@
+
+public class PaersonMain {
+	
+	static {
+		System.out.println("PersonMain method is grtting roaded");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Person p1=new Person();
+		Person p2=new Person("Tom",24);
+		Person p3=new Person(12,"jerry");
+		
+		System.out.println("Currentjj Person Count: " + Person.personCount);		
+		new Person();		
+		new Person("A",26);		
+		System.out.println("Currentjj Person Count: " + Person.personCount);		
+		for(int a=1;a<=10;a++) {
+			new Person();
+		}
+		System.out.println("Currentjj Person Count: " + Person.personCount);
+		System.out.println("Final Count of Person: " + Person.getPerson_Count());
+
+	}
+
+}

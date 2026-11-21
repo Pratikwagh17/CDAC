@@ -1,0 +1,16 @@
+package collection_framework;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class HashMapExampleMain {
+
+	public static void main(String[] args) {
+		Map<Long, String> contacts = new HashMap<>();
+		contacts.put(9874105632l, "James");
+		contacts.put(3692102l, "Jack");
+		contacts.put(7416105632l, "Anna");
+
+	}
+
+}
