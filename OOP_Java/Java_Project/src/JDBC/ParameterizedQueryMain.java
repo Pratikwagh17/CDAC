@@ -21,6 +21,7 @@ public class ParameterizedQueryMain {
 			
 			
 			while(rs.next()) {
+				flag=1;
 				String name=rs.getString(1);
 				String location=rs.getString(2);
 				int deptno=rs.getInt(3);
