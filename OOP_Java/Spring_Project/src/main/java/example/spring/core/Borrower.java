@@ -1,11 +1,13 @@
 package example.spring.core;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 public class Borrower {
 	private int id;
 	private String name;
-	@Autowired
+	@Autowired(required=false)
+	@Qualifier("myAnotherBook")
 	private Book book;
 
 	public Borrower() {

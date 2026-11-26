@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Lazy;
+import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Scope;
 
 @Configurable  //marks the class as a configuration specific class
@@ -56,8 +57,13 @@ public class SpringConfig {
 			return cst;
 		}
 		@Bean("myBook")
+		@Primary
 		public Book getBook() {
 			return new Book ("Boardroom", "Achyut Godbole");
+			
+		}@Bean("myAnotherBook")
+		public Book getAnotherBook() {
+			return new Book ("APJ Kalam", "Wings of fire");
 			
 		}
 		@Bean ("myBorrower")
