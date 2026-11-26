@@ -17,7 +17,7 @@ public class CreateArticleMain {
 				Session session = sf.openSession();
 				
 				){
-			Article a1= new Article(null,"king","lion",LocalDate.now());
+			Article a1= new Article(null,"Podcaster","raj shamani",LocalDate.now());
 			Transaction tx = session.beginTransaction();
 			session.persist(a1);
 			tx.commit();

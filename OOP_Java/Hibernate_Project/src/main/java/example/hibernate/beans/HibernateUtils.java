@@ -3,6 +3,10 @@ package example.hibernate.beans;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 import example.hibernate.entity.Article;
+import example.hibernate.entity.CricketPlayer;
+import example.hibernate.entity.CricketTeam;
+import example.hibernate.entity.Employee;
+import example.hibernate.entity.Passport;
 
 public class HibernateUtils {
 	public static SessionFactory getSessionFactory() {		
@@ -13,7 +17,13 @@ public class HibernateUtils {
 		.setProperty("hibernate.connection.password","root")
 		.setProperty("hibernate.hbm2ddl.auto","update")
 		.setProperty("hibernate.show_sql","true")
-		.addAnnotatedClass(Article.class)
+		.addAnnotatedClasses(
+				Article.class, 
+				Passport.class, 
+				Employee.class,
+				CricketTeam.class,
+				CricketPlayer.class
+				)
 		.buildSessionFactory();
 		
 	}

@@ -6,7 +6,7 @@ import org.hibernate.Transaction;
 
 import example.hibernate.beans.HibernateUtils;
 import example.hibernate.entity.Article;
-
+ 
 
 public class DeleteArticleMain {
 	public static void main(String[] args) {
